@@ -16,9 +16,9 @@ export interface NewsApiResponse {
   status: string;
 }
 
-export type SkeletonType = "banner" | "item"
+export type SkeletonType = "banner" | "item";
 
-export type DirectionType = "row" | "column"
+export type DirectionType = "row" | "column";
 
 export interface CategoriesApiResponse {
   categories: CategoriesType[];
@@ -27,11 +27,11 @@ export interface CategoriesApiResponse {
 }
 
 export interface IPaginationProps {
-  totalPages: number,
-  handlePreviousPage: () => void,
-  handleNextPage: () => void,
-  handlePageClick: (page: number) => void,
-  currentPage: number,
+  totalPages: number;
+  handlePreviousPage: () => void;
+  handleNextPage: () => void;
+  handlePageClick: (page: number) => void;
+  currentPage: number;
 }
 
 export interface IFilters {
@@ -41,7 +41,7 @@ export interface IFilters {
   keywords: string;
 }
 
-export type ParamsType = Partial<IFilters>
+export type ParamsType = Partial<IFilters>;
 
 export type CategoriesType =
   | "regional"
